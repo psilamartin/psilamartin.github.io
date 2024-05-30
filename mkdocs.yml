@@ -1,0 +1,94 @@
+site_name: Site de la PSI* du Lycée La Martinière Monplaisi
+site_url: https://psilamartin.github.io/
+#repo_url: https://github.com/xpessoles/
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.tracking # Menu de la page à droite ?
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - content.tooltips  # pour les infobulles sur les mots ?
+  language: fr
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Mode sombre
+      primary: teal
+      accent: teal 
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Mode clair
+      primary: teal
+      accent: teal
+  icon:
+    logo: material/robot-industrial-outline
+    
+    
+plugins:
+  - social
+  - search
+  - tags:  
+      tags_file: Divers/tags.md
+  #- glightbox Marche pas
+  #- mkdocs-jupyter # CA MARCHE PAS
+  
+  
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/psilamartin
+#    - icon: fontawesome/brands/twitter
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/xavier-pessoles-29061968/
+  
+  
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets   # pour les infobulles sur les mots ?
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list           # pour les infobulles sur les mots ?
+  - abbr                # pour les infobulles sur les mots ?
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:  # Ajouter de nouveaux icones
+        custom_icons:
+          - overrides/.icons
+  - toc:
+      permalink: true
+  
+copyright: |
+  &copy; 2024 <a href="https://github.com/psilamartin"  target="_blank" rel="noopener">Xavier Pessoles</a>
+
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - javascripts/feedback.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - Acceuil: index.md
+  - Organisation : orga.md
+  - Maths: maths.md
+  - Physique: physique.md
+  - SII: sii.md
+  - Informatique : info.md
+  
