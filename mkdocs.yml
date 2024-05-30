@@ -20,24 +20,23 @@ theme:
       toggle:
         icon: material/toggle-switch-off-outline 
         name: Mode sombre
-      primary: teal
-      accent: teal 
+      primary: deep orange
+      accent: deep orange 
     - scheme: slate 
       toggle:
         icon: material/toggle-switch
         name: Mode clair
-      primary: teal
-      accent: teal
+      primary: deep orange
+      accent: deep orange
+  favicon: fontawesome-solid-wave-square
   icon:
-    logo: material/robot-industrial-outline
+    logo: fontawesome-solid-wave-square 
     
     
 plugins:
   - social
   - search
-  
-  
-  
+
 extra:
   social:
     - icon: fontawesome/brands/github-alt
