@@ -35,10 +35,7 @@ theme:
 plugins:
   - social
   - search
-  - tags:  
-      tags_file: Divers/tags.md
-  #- glightbox Marche pas
-  #- mkdocs-jupyter # CA MARCHE PAS
+  
   
   
 extra:
@@ -68,9 +65,6 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-      options:  # Ajouter de nouveaux icones
-        custom_icons:
-          - overrides/.icons
   - toc:
       permalink: true
   
