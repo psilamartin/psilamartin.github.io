@@ -28,9 +28,9 @@ theme:
         name: Mode clair
       primary: deep orange
       accent: deep orange
-  favicon: fontawesome-solid-wave-square
+  favicon: fontawesome/solid-wave-square
   icon:
-    logo: fontawesome-solid-wave-square 
+    logo: fontawesome/solid-wave-square 
     
     
 plugins:
