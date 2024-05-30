@@ -40,9 +40,7 @@ extra:
   social:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/psilamartin
-#    - icon: fontawesome/brands/twitter
-    - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/xavier-pessoles-29061968/
+
   
   
 markdown_extensions:
